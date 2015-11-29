@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+        <TextView
+            android:id="@+id/Id_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textSize="18sp"
+            android:textColor="@color/textcolor"/>
+
+        <TextView
+            android:id="@+id/Id_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Id_title"
+            android:text="artist"
+            android:textSize="15sp"
+            android:textColor="@color/textcolor"/>
+
+        <TextView
+            android:id="@+id/Id_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="duration"
+            android:textSize="15sp"
+            android:textColor="@color/textcolor"/>
+
+</RelativeLayout>
