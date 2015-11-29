@@ -16,6 +16,12 @@ import java.util.List;
 
 /**
  * Created by thomas on 15-11-29.
+ *
+ * MusicAdapter:适配器类，继承自BaseAdapter，
+ * 用来将想要在音乐列表显示的MusicInfo属性和ListView适配，
+ * 在构造方法中初始化List<MusicInfo>作为数据源，将扫描得到
+ * 的音乐对象放入List<MusicInfo>中，最后通过适配器与lisiview
+ * 完成适配。
  */
 public class MusicAdapter extends BaseAdapter {
 
