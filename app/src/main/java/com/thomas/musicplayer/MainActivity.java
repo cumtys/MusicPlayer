@@ -1,5 +1,6 @@
 package com.thomas.musicplayer;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -14,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity
@@ -41,6 +43,17 @@ public class MainActivity extends AppCompatActivity
         listView = (ListView)findViewById(R.id.Id_musiclist);
         musicAdapter = new MusicAdapter(this);
         listView.setAdapter(musicAdapter);
+
+        /**为listview设置监听器，这里用匿名内部类来实现
+         *
+         */
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                System.out.println(position);
+
+            }
+        });
 
 
 

@@ -26,7 +26,7 @@ import java.util.List;
 public class MusicAdapter extends BaseAdapter {
 
     public Context context;
-    public List<MusicInfo> musicInfos;
+    public static List<MusicInfo> musicInfos;
     public MusicInfo musicInfo;
     public int i=1;
     public LayoutInflater inflater;
